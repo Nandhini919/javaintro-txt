@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Method7 {
 
-	private static int length;
 	public static void main(String[] args) {
 		System.out.println("Main!!!!!");
 		//Area of Triangle
@@ -34,8 +33,7 @@ public class Method7 {
 		int breadth1=sc.nextInt();
 		System.out.println("enter the Height:");
 		int hight=sc.nextInt();
-		int breadth= 0;
-		int  aor=FindAreaOfRectangle(length,breadth1,hight);
+		FindAreaOfRectangle(length,breadth1,hight);
 		System.out.println("Area of Rectangle");
 		
 		
