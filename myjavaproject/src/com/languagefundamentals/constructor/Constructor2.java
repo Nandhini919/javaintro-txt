@@ -4,15 +4,20 @@ public class Constructor2 {
 	String sid;
 	String sname;
 	int sage;
+	
+	
 	Constructor2() {
 		System.out.println("No-args called");
 	}
 
+	//Parameterized constructors
 	Constructor2(String sid, String sname, int sage) {
 		System.out.println("parameterized called");
+		//using of this keyword is used to
 		this.sid=sid;
 		this.sname=sname;
 		this.sage=sage;
+		System.out.println("************************************");
 	}
 
 	public static void main(String[] args) {
@@ -31,5 +36,7 @@ public class Constructor2 {
 		System.out.println(sname);
 		System.out.println(sage);
 		
+		
 	}
 }
+
