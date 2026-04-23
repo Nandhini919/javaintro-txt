@@ -1,5 +1,6 @@
 package com.arrays;
-
+//Selection sort
+//time complexity:o(n^2)
 public class SelectionSortAlgorithm {
 
 	public static void main(String[] args) {

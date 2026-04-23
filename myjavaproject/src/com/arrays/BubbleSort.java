@@ -1,5 +1,7 @@
 package com.arrays;
 //WAP to print the array in sorting order using bubble sort.
+//time complexity:o(n^2)  o(n)
+//space complexity:o(1)
 public class BubbleSort {
 
 	public static void main(String[] args) {

@@ -1,4 +1,5 @@
 package com.arrays;
+//time complexity:o(n^2)
 
 public class InsertionSortAlgorithm {
 
