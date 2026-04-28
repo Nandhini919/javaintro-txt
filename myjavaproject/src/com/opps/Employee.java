@@ -1,4 +1,7 @@
 package com.opps;
+//DTO:data transfer object
+//POJO:plain old java object
+//Model Object:same like your data base table
 //variables + methods we can use only data members.
 public class Employee {
 	private int empid;
