@@ -6,6 +6,10 @@ public class Loan {
 
 
 	static Scanner sc = new Scanner(System.in);
+	long getphone() {
+		long l  = 7981596131L;
+		return l;
+	}
 	
 	String getCustomerAddressDetails() {
 	String address = null;
