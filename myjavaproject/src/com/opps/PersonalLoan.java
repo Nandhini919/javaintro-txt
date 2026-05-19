@@ -29,7 +29,44 @@ public class PersonalLoan extends Loan {
 //		p-->number-->child-->Number,Long,Double,Integer.........
 //		p-->object-->child-->Object,string,StringBuffer,Employee..any object
 //		p-->String-->child-->String only because String does not have any sub classes.
+
+
 	
+//      3.the scope of method overriding should not reduced.
+//	     ce:cannot reduce the visibility of the inherited method from loan
+
+//       NOTE:
+//	       if the parent class method access modifier is public -->child class access modifier must be public
+//	       if the parent class method access modifier is protected -->child class access modifier can be protected
+//	       if the parent class method access modifier is <default> -->child class access modifier must be public or protected or<default>
+//	       if the parent class method access modifier is private -->we cannot override those methods in child class
+	
+//       4.from parent class,private methods we cannot override,bcoz the scope of the variable is private is within the class     
+	
+//	     NOTE:if i am creating private method in parent class,should i create method in child class with private access modifier or any access modifier 
+//	     yes until you use @Override annotation if we use @Override annotation its not considering  as method overriding compile time error
+	
+//	     5.if the parent class method is static ,we cannot override,because the static methods are loading when the class
+//	     but MOR concepts is depending on object creation.this is called method hiding
+//	     NOTE:if the parent class consists of static method .should we create method in child class with static..
+//	     yes until you use @override annotation .if we use @Override annotation is considered as MOR
+	
+//       6.if the parent class method is final,we cannot override final methods into child class	
+//	     NOTE:final is non-access modifier to provide some specifications  in java like below
+//	     i)if the class is final ,we cannot extends class for child 
+//      ii)if the parent class method is final,we cannot override those methods into child
+//      NOTE:
+//    	i)if the class is final,all methods inside the class is also final.
+//      ii)if the  variable is final,we cannot change the value of a variable.
+//       NOTE:
+//   	if the class is final,all variables inside that class is also not final.
+//      NOTE: final methods or variables we can access outside of the classes or packages based on access modifiers.
+
+//	    7.if the parent class throws any exceptions ,the child class no need to throws the any exception
+//    	but if the parent class method throws any exception,then the parent class must throws the same .
+	
+//      8.if we have abstract methods from abstract class must override it into child class	,and the implemented method from a child class is also have a another child class which is abstract class,
+//	   can we override the implemented method as abstract class from its 1st  child class to next child class..?yes	
 	@Override
 	long getphone() {
 		long l  = 7981596131L;
@@ -54,11 +91,13 @@ public class PersonalLoan extends Loan {
 //      only parent functionalities we can call
 		
 //		dynamic dispatching :whenever the child objects storing into parent reference
-//		we can call only parent class functionalities but if any of the method is overiding from the parent to child 
+//		we can call only parent class functionalities but if any of the method is overriding from the parent to child 
 //		then  it calls the child class overridden method only
-		
+
+
 		Loan l2 = new PersonalLoan();
 		System.out.println("***********"+l2.getROI());
+		
 		
 		
 //		Scenario4: Can we store Parent Object into child Reference ..? 
